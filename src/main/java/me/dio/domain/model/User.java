@@ -10,6 +10,7 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String name;
 
     @OneToOne(cascade = CascadeType.ALL)
@@ -71,4 +72,5 @@ public class User {
     public void setNews(List<News> news) {
         this.news = news;
     }
+
 }
